@@ -26,6 +26,11 @@ if [ ! -n $(which pip3 | tr -d '\n') ]; then
     return 1;
 fi
 
+if [ ! -n $(which mysql | tr -d '\n') ]; then
+    echo "MySQL is not installed." >&2;
+    return 1;
+fi
+
 $VENVBIN -p $PYBIN $VENVDIR
 source $VENVDIR/bin/activate
 pip3 install --upgrade pip
