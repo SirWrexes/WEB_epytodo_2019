@@ -32,5 +32,6 @@ pip3 install --upgrade pip
 pip3 install -r requirements.txt
 deactivate
 
-echo "EpyTodo environment installed, please source the right activation script"
-echo "from $VENVDIR/bin/ for your shell in order to use it."
+echo
+echo "EpyTodo environment installed."
+echo "Please source the right activation script for your shell from $VENVDIR/bin/."
