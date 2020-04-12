@@ -37,6 +37,8 @@ pip3 install --upgrade pip
 pip3 install -r requirements.txt
 deactivate
 
-echo
-echo "EpyTodo environment installed."
+echo; echo "Please enter your password to enable the MySQL service."
+sudo systemctl enable mariadb.service
+
+echo; echo "EpyTodo environment installed."
 echo "Please source the right activation script for your shell from $VENVDIR/bin/."
